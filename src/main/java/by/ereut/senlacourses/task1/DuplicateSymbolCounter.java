@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 public class DuplicateSymbolCounter {
 
     private static final String regExp = "(.)\\1{2}";
-    private String enteredString;
+    private final String enteredString;
 
     public int countMatches() {
         int value = 0;

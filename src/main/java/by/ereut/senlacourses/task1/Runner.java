@@ -6,7 +6,7 @@ public class Runner {
 
     public static void main(String[] args) {
         System.out.println("Please, enter the string");
-        Scanner scanner = new Scanner(System.in);
+        final Scanner scanner = new Scanner(System.in);
         final String enteredString = scanner.nextLine();
         final DuplicateSymbolCounter counter = new DuplicateSymbolCounter(enteredString);
         System.out.print(counter.countMatches());
