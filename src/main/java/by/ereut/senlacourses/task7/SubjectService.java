@@ -21,7 +21,7 @@ public class SubjectService {
         for (Subject subject : fullSubjectList) {
             final int fullness = safe.getSafeFullness();
             if (fullness < safe.getMaxVolume()) {
-                if (subject.getVolume() < safe.getFreeVolume()) {
+                if (subject.getVolume() <= safe.getFreeVolume()) {
                     safe.addSubject(subject);
                 }
             }
